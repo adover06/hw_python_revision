@@ -5,7 +5,7 @@ class Base:
         self.size = size
         
 
-class Circle(Base): #added the Base class as a parent class
+class Square(Base): #added the Base class as a parent class
     def __init__(self, x, y, size): #added the y paramerter
         super().__init__(x, y, size) #pass the values to the parent constructor
         
@@ -16,7 +16,7 @@ class Circle(Base): #added the Base class as a parent class
 ({self.x}, {self.y})\n{self.size}"""
 
 def main():
-    c = Circle(2,3,5)
+    c = Square(2,3,5)
     print(c.shape())
     print(c.draw())
 

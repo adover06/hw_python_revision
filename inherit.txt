@@ -1,0 +1,2 @@
+Reason 1: If we have a parent class with many child classes, inheritance allows us to reuse code so we don't have to recreate the same functions for multiple object types.
+Reason 2:Inheritance lets us create a sort of hierarchy of classes, which improves organization and makes our code easier to expand.
