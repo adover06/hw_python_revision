@@ -12,13 +12,11 @@ class Square(Base): #added the Base class as a parent class
     def shape(self): #returns the shape type
         return "This is a square"
     def draw(self):
-        return f"""
-({self.x}, {self.y})\n{self.size}"""
+        return f"({self.x}, {self.y})\n{self.size}"
 
 def main():
-    c = Square(2,3,5)
-    print(c.shape())
-    print(c.draw())
-
-
+    s = Square(2, 3, 5)
+    print(s.shape())
+    print((s.x, s.y))
+    print(s.size)
 main()
