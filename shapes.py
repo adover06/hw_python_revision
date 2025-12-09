@@ -3,35 +3,24 @@ class Base:
         self.x = x
         self.y = y
         self.size = size
-        
 
-class Circle(Base): #added the Base class as a parent class
-    def __init__(self, x, y, size): #added the y paramerter
-        super().__init__(x, y, size) #pass the values to the parent constructor
-        
-    def shape(self): #returns the shape type
-        return "This is a circle"
+
+class Square(Base):
+    def __init__(self, x, y, size):
+        super().__init__(x, y, size)
+
+    def shape(self):
+        return "This is a square"
+
     def draw(self):
-        return f"""
-({self.x}, {self.y})\n{self.size}
-         , - ~ ~ ~ - ,
-     , '               ' ,
-   ,                       ,
-  ,                         ,
- ,                           ,
- ,                           ,
- ,                           ,
-  ,                         ,
-   ,                       ,
-     ,                  , '
-       ' - , _ _ _ ,  '
-               """
-#I tried to copy the circle text from the homework pdf and from the pdf provided in the announcement but both wont copy the spacing correctly.
+        return f"({self.x}, {self.y})\n{self.size}"
+
 
 def main():
-    c = Circle(1,2,3)
-    print(c.shape())
-    print(c.draw())
+    s = Square(2, 3, 5)
+    print(s.shape())
+    print((s.x, s.y))
+    print(s.size)
 
 
 main()
